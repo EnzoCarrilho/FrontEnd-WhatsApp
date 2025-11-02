@@ -6,25 +6,25 @@
 
 body{
     height: 100vh;
-    padding: 4px;
     overflow: hidden;
+    display: flex;
 }
 
 .contatos{
-    width: 30%;
+    width: 40%;
     height: 100%;
     padding: 8px; 
     border-right: 2px solid #000; 
      
 }
 
-header{
+.header-contatos{
     display: grid;
     height: 100px;
 }
 
 
-header input{
+.header-contatos input{
     width: 100%;
     height: 100%;
     border-radius: 24px;
@@ -32,6 +32,7 @@ header input{
 }
 
 main{
+    display: flex;
     height: 100%;
     margin-top: 24px;
 }
@@ -56,7 +57,7 @@ main{
     width: 100%;
     padding: 12px;
     padding-left: 0;
-    gap: 4px;
+    gap: 12px;
     
 }
 
@@ -72,9 +73,60 @@ main{
 
 
 .imagem-contato{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     background-color: tomato;
+}
+
+
+.conversas{
+    width: 100%;
+    
+}
+
+
+.header-contato{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.contato-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+}
+.imagem-contato-header{
+    height: 50px;
+    width: 50px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+.mensagens{
+    height: 100%;
+    margin-top: 30px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+.mensagens p{
+    align-self: flex-end;
+    background-color: rgb(48, 179, 48);
+}
+
+.mensagens span{
+    background-color: darkgray;
+    align-self: flex-start;
 }
