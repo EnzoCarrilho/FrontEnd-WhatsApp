@@ -8,7 +8,8 @@ body{
     height: 100vh;
     overflow: hidden;
     display: flex;
-    
+    color: white;
+    font-family: roboto;
 }
 input{
     box-shadow: none;
@@ -17,54 +18,64 @@ input{
 
 .configuracoes{
     width: 3%;
-    border-right: 1px solid #000;
+    border-right: 2px solid #343636;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 12px;
     gap: 24px; 
+    background-color: #1D1F1F;
 }
-.configuracoes button{
-    height: 34px;
-    width: 34px;
+.configuracoes img{
+    height: 24px;
+    width: 24px;
 }
 
 .contatos{
-    width: 30%;
+    width: 35%;
     height: 100%;
     padding: 8px; 
-    border-right: 1px solid #000; 
+    border-right: 2px solid #343636; 
     padding: 12px;
+    background-color: #161717;
 }
 
 .header-contatos{
     display: grid;
     height: 100px;
 }
+.header-contatos h1{
+    font-size: 24px;
+}
 
 
 .header-contatos input{
     width: 100%;
-    height: 100%;
+    height: 85%;
     border-radius: 24px;
     padding: 8px;
-    border-style: solid;
+    border-style: none;
+    background-color: #2E2F2F;
+    padding-left: 10px;
 }
 
 .contatos nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     margin-top: 8px;
-    font-size: 18px;
+    font-size: 12px;
     padding: 8px;
     padding-bottom: 0;
+    gap: 8px;
 }
 .contatos nav span{
-    background-color: aliceblue;
+    border: 2px solid #343636;
+    padding: 8px;
+    padding-inline: 12px;
 }
 .contatos nav span:hover{
-    background-color: lightblue;
+    background-color: #2E2F2F;
 }
 
 main{
@@ -92,11 +103,12 @@ main{
     align-items: center;
     height: 80px;
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     gap: 12px;
+    padding-left: 8px;
 }
 .contato:hover{
-    background-color: aliceblue;
+    background-color: #2E2F2F;
     border-radius: 12px
 }
 
@@ -111,10 +123,14 @@ main{
     height: 100%;
 }
 
+.contato-info h2{
+    font-size: 20px;
+}
+
 
 .imagem-contato{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
     background-color: tomato;
@@ -123,6 +139,7 @@ main{
 
 .conversas{
     width: 100%;
+    background-image: url('./img/background-conversas.webp');
 }
 
 
@@ -132,7 +149,7 @@ main{
     position: fixed;
     display: flex;
     align-items: center;
-    background-color: gainsboro;
+    background-color: #161717;
 }
 
 .contato-header{
@@ -140,10 +157,11 @@ main{
     align-items: center;
     gap: 12px;
     padding: 12px;
+    font-size: 12px;
 }
 .imagem-contato-header{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: tomato;
     border-radius: 50%;
 }
@@ -162,7 +180,6 @@ main{
     scrollbar-width: none;
     padding-bottom: 150px;
     padding-top: 100px;
-    background-color: rgb(230, 226, 221);
 }
 
 .mensagens:hover{
@@ -177,12 +194,12 @@ main{
 
 .mensagens p{
     align-self: flex-end;
-    background-color: rgb(48, 179, 48);
+    background-color: #144D37;
     border-bottom-right-radius: 0;    
 }
 
 .mensagens span{
-    background-color: darkgray;
+    background-color: #242626;
     align-self: flex-start;
     border-bottom-left-radius: 0;
 }
@@ -191,11 +208,12 @@ main{
     position: absolute;
     top: 90%;
     right: 0;
-    left: 26%;
+    left: 28%;
     bottom: 0;
     margin: auto;
     height: 50px;   
     width: 70%;
     border-radius: 24px;
     padding: 8px;
+    background-color: #2E2F2F;
 }
