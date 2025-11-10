@@ -11,6 +11,7 @@ body{
     color: white;
     font-family: roboto;
 }
+
 input{
     box-shadow: none;
     border-style: hidden;
@@ -96,6 +97,10 @@ main{
     gap: 12px;
     margin-top: 12px;
 }
+.lista-contatos:hover{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
 
 
 .contato{
@@ -140,6 +145,11 @@ main{
 .conversas{
     width: 100%;
     background-image: url('./img/background-conversas.webp');
+}
+.conversas:hover{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #2E2F2F;
 }
 
 

@@ -16,3 +16,5 @@ async function getUserProfile(number){
     console.log(data)
     return data
 }
+
+listarTodosUsuarios()
