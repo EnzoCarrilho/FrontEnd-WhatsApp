@@ -3,7 +3,6 @@
 import {listarTodosUsuarios} from "./contatos.js"
 
 const users = await listarTodosUsuarios()
-console.log(users)
 
 function criarCardsLogin(user){
     const container = document.getElementById('container-cards')
@@ -21,7 +20,7 @@ function criarCardsLogin(user){
     card.append(imgContato, nomeContato)
 
     card.addEventListener("click", () => {
-    window.location.href = "conversas.html";
+    window.location.href = `conversas.html?number=${user.number}`
     });
 }
 

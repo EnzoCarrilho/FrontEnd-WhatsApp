@@ -12,15 +12,13 @@ async function getUserProfile(number){
     const url = `http://localhost:8080/v1/whatsapp/user/${number}`
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data)
     return data
 }
 
-async function getUserContacts(number){
+export async function getUserContacts(number){
     const url = `http://localhost:8080/v1/whatsapp/contatos/${number}`
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data)
     return data
 }
 
